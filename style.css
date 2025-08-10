@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+.cart{
+    min-width: 250px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart th, .cart td {
+    padding: 6px;
+    text-align: left;
+    font-size: 14px;
+}
+.cart th.img, .cart td img {
+    text-align: center;
+}
+.search-container {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.search-container input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+.search-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+.drink-list {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.drink {
+    background: white;
+    
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.drink img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.drink p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.drink .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* keep them centered in card */
+    margin-top: 10px;
+}
+
+.drink .button-group button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drink .button-group .btn-add {
+    background-color: #25974b;
+    color: white;
+}
+
+.drink .button-group .btn-disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.drink .button-group .btn-details {
+    background-color: #eee;
+    color: black;
+}
+
+.cart img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}

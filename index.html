@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="search-item" placeholder="Search for a drink...">
+        <button id="search-button">Search</button>
+    </div>
+    <div class="container">
+        <div id="drink-list" class="drink-list">
+
+        </div>
+        <div class="cart">
+            <h3>Total cart: <span id="cart-count">0</span></h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SL</th>
+                        <th class="img">Img</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+
+                </tbody>
+                    
+            </table>
+        </div>
+    </div> 
+<div class="modal fade" id="drinkModal" tabindex="-1" aria-labelledby="drinkModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="drinkModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" alt="" class="img-fluid rounded mb-3">
+        <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+        <p><strong>Alcoholic:</strong> <span id="modalAlcoholic"></span></p>
+        <p><strong>Glass:</strong> <span id="modalGlass"></span></p>
+        <p><strong>Instructions:</strong> <span id="modalInstructions"></span></p>
+        <p><strong>Tags:</strong> <span id="modalTags"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
