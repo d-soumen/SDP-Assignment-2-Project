@@ -4,7 +4,7 @@ const load_drinks=(drinkName="margarita")=>{
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinkName}`)
     .then(res=>res.json())
     .then(data=>{
-        currentDrinks = data.drinks || [];
+        currentDrinks = data.drinks;
         displaydrinks(currentDrinks);
 
     });
@@ -109,5 +109,6 @@ document.getElementById("search-button").addEventListener("click", () => {
     const drinkName = document.getElementById("search-item").value.trim();
     load_drinks(drinkName);
 });
+
 
 load_drinks();
