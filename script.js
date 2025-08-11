@@ -13,7 +13,7 @@ const load_drinks=(drinkName="margarita")=>{
 const displaydrinks=(drinks)=>{
     const drinkscontainer=document.getElementById("drink-list");
 
-    if (!drinks){
+    if (!drinks ) {
         drinkscontainer.innerHTML=`<p style="grid-column:1/-1;text-align:center;">No drinks found</p>`;
         return;
     }
@@ -84,6 +84,7 @@ const singleDrink = (id) => {
         document.getElementById("modalInstructions").innerText = drink.strInstructions;
         document.getElementById("modalTags").innerText = drink.strTags || "No tags";
 
+
         const modal = new bootstrap.Modal(document.getElementById('drinkModal'));
         modal.show();
     });
@@ -109,6 +110,5 @@ document.getElementById("search-button").addEventListener("click", () => {
     const drinkName = document.getElementById("search-item").value.trim();
     load_drinks(drinkName);
 });
-
 
 load_drinks();
